@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ortak alan */
+.align-section{
+  width: 80%;
+  margin: auto;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.align-item{
+  border-radius: 10px;
+  box-sizing: border-box;
+  flex-basis: 30%;
+  margin-bottom: 40px;
+}
+
+/* header alanı */
+header{
+  background-color: antiquewhite;
+  min-height: 100vh;
+  background: linear-gradient(rgba(5, 10, 30, 0.7), rgba(5, 10, 30, 0.7)), url(İmages/bg.webp);
+  background-position: center;
+  background-size: cover;
+
+  position: relative;
+}
+
+nav{
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a img{
+  width: 150px;
+}
+
+.nav-links{
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+
+  position: relative;
+}
+.nav-links ul li a{
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+}
+
+.nav-links ul li a::after{
+  content: "";
+  background-color: red;
+  width: 0;
+  display: block;
+  margin-top: 4px;
+  height: 2px;
+}
+
+.nav-links ul li a:hover::after{
+  width: 100%;
+  transition: .3s;
+}
+
+.bi-list{
+  color: white;
+  font-size: 30px;
+  margin-right: 20px;
+  display: none;
+  cursor: pointer;
+}
+
+.bi-list:hover{
+  transform: scale(1.1);
+}
+
+/* text box */
+.text-box{
+  width: 90%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-box h1{
+  font-size: 60px;
+}
+
+.text-box p{
+  margin: 10px 40px;
+  font-size: 15px;
+  color: white;
+}
+
+.hero-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 30px;
+  background-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero-btn:hover{
+  border-color: red;
+  background-color: red;
+  transition: .3s;
+}
+
+/* kurslar */
+
+section h1{
+  font-size: 35px;
+}
+
+section p{
+  color: #777;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+  padding: 10px;
+}
+
+.row{
+  margin: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.course-col{
+  background-color: antiquewhite;
+  padding: 20px 10px;
+}
+
+.course-col:hover{
+  box-shadow: 0 0 10px rgba(5, 10, 30, 0.7);
+  transition: .3s;
+}
+
+section div div h3{
+  margin: 10px 0;
+}
+
+/* Kampüs */
+
+.campus-col{
+  background-color: aqua;
+  position: relative;  
+  overflow: hidden;
+}
+
+.campus-col img{
+  width: 100%;
+  display: block;
+}
+
+.layer{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: .3s;
+}
+
+.layer:hover{
+  background-color: rgba(200, 100, 50, 0.5);
+}
+
+.layer h3{
+  color: white;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+  opacity: 0;
+}
+
+.layer:hover h3{
+  bottom: 50%;
+  transition: .3s;
+  opacity: 1;
+}
+
+/* Birimler */
+.facilities-col{
+  text-align: left;
+}
+
+.facilities-col img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* yorumlar */
+.testemonials-col{
+  background-color: antiquewhite;
+  text-align: left;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: flex;
+  padding: 10px;
+}
+
+.testemonials-col img{
+  height: 50px;
+  margin: 5px 10px !important;
+  border-radius: 50%;
+}
+
+.testemonials-col div p{
+  padding: 0;
+}
+
+.testemonials-col div h2{
+  margin-top: 15px;
+}
+
+.testemonials-col div .bi{
+  color: red;
+}
+
+/* hızlı ulaşım */
+.au{
+  background: linear-gradient(rgba(5, 10, 30, 0.7), rgba(5, 10, 30, 0.7)), url(İmages/london.jpeg);
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0;
+  border-radius: 10px;
+  margin-top: 100px;
+}
+
+.au h1{
+  color: white;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+/* footer alanı*/
+footer{
+  margin-top: 100px !important;
+  margin-bottom: 100px !important;
+}
+footer h2{
+  margin: 25px 0;
+}
+
+.icons{
+  margin: 10px;
+}
+
+.icons .bi{
+  color: red;
+  margin: 0 10px;
+  cursor: pointer;
+  padding: 20px 10px;
+}
+
+.bi-heart-fill {
+  color: red;
+  margin: 10px;
+}
+/*responsive*/
+@media (max-width:768px) {
+  .nav-links{
+    display: none;
+  }
+  .bi-list{
+    display: block;
+  }
+  .text-box h1{
+    font-size: 35px;
+  }
+  .row{
+    flex-direction: column;
+  }
+  .au h1{
+    font-size: 25px;
+  }
+}
